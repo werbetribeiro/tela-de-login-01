@@ -52,7 +52,7 @@ form .mostrar {
 }
  
 input[type=password] {
-    background: url('assets/eye.svg') no-repeat right;
+    background: url('assets/eye-abr.svg') no-repeat right;
 }
 
 input[type=text]:focus, input[type=password]:focus {
