@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #202024;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 280px;
+    height: 380px;
+    background: #ededed;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form .mostrar {
+    align-self: flex-start;
+    margin-left: 30px;
+    font-size: 0.8rem;
+}
+
+.mostrar {
+    display: flex;
+    gap: 10px;
+}
+
+.user, .pass {
+    color: #202024;
+    background: none;
+    outline: none;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #202024;
+    padding: 10px;
+}
+
+.user {
+    background: url('assets/user.svg') no-repeat right;
+}
+ 
+input[type=password] {
+    background: url('assets/eye.svg') no-repeat right;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 1px solid #9b9b9b;
+}
+
+input[type=button] {
+    background: #202024;
+    color: #ededed;
+    display: block;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background: #2c2c31;
+}
