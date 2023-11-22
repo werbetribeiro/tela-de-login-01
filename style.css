@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +61,7 @@ input[type=text]:focus, input[type=password]:focus {
     border-bottom: 1px solid #9b9b9b;
 }
 
-input[type=button] {
+input[type=submit] {
     background: #202024;
     color: #ededed;
     display: block;
@@ -75,4 +77,36 @@ input[type=button] {
 
 input[type=button]:hover {
     background: #2c2c31;
+}
+
+
+/* Formatação dá page of congrats */
+
+#obrigado {
+    background: #09090a;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.thank {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    color: #7346cc;
+    cursor: pointer;
+}
+
+.call-to-action {
+    font-family: 'Roboto Mono', monospace;
+    color: #ededed;
+}
+
+.call-to-action a {
+    text-decoration: none;
+    color: currentColor;
+    transition: color 0.3s;
+}
+
+.call-to-action a:hover {
+    color: #c2c2c2;
 }

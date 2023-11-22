@@ -15,3 +15,18 @@ function mudar() {
         senha.style = "background: url('assets/eye-abr.svg') no-repeat right;"
     }
 }
+
+
+function gerarCores() {
+    let codigos = '0123456789ABCDEF'
+    let cor = '#'
+    for (var i = 0; i < 6; i++) {
+        cor += codigos[Math.floor(Math.random() * 16)];
+    }
+    return cor
+}
+
+function mudarCores() {
+    var obrigado = document.querySelector('.thank')
+    obrigado.style = `color: ${gerarCores()};`
+}
